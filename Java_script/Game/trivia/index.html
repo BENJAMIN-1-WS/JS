@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Those are imports and defentions you should not edit  -->
+	
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>Trivia Game _ by BenNoioff</title> <!-- You can enter the application title here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  Styles  -->
+    <link rel="stylesheet" href=""> <!--the reference to your Css should be inserted here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/f24533ba21.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+	<!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+	<!-- Jquery you should not edit -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+	<!-- JavaScript -->
+	 <script type="text/javascript" src="Script.js"> </script> <!--the reference to your JavaScript code should be inserted here under src -->
+	
+</head>
+
+<body class="text-center">
+<!-- The application HTML should appear here. -->
+<div class="container">
+    <div class="form-group">
+
+           <label for="catgories">
+               <b>catgories</b>
+               <select  class="form-control" id="catgories">
+                   <option value="18">ברירת מחדל</option>
+                 </select>
+             </label>
+     </div>  
+         <div class="form-group">
+             <b>amount</b>
+             <input  class="form-control" type="number" name="amount" id="amount" class="form-control __web-inspector-hide-shortcut__" min="1" max="50" value="5">
+         </div>
+         
+         <div class="form-group">
+              <label for="type">
+                  <b>type</b>
+                  <select id="type"  class="form-control" >
+                      <option value="multiple">Multiple Choice</option>
+                      <option value="boolean">True / False</option>
+                  </select>
+              </label>
+         </div>
+         <div class="form-group">    
+             <label for="difficulty">
+                  <b>difficulty</b>
+                  <select  class="form-control" id="difficulty">
+                      <option value='hard'>hard</option>
+                      <option value='medium'>medium</option>
+                      <option value='easy'>easy</option>
+                     </select>
+              </label>
+         </div>
+         <button type="submit" class= "btn btn-success" onclick="start()">start</button>
+     </div>
+
+     <br>
+
+     <div class="container">
+
+            <h1 id="question"> </h1>
+            <br>
+            <div id="answers"> </div>
+            <br>
+            <h2 id="score">score: </h2>
+            <br>
+            <span id="heart"></span>
+            <br>
+            <br>
+     </div>
+
+
+
+
+</body>
+</html>
